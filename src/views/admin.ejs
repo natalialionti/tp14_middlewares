@@ -1,0 +1,8 @@
+<%-include("./partials/head") %>  
+<body>
+	<%-include("./partials/header") %>  
+	<h1>Bienvenidx <%= user %> </h1>  <!-- muestro de manera personalizada quien ingresa a la página utilizando una etiqueta EJS con el atributo user. La información de esta etiqueta me viene dada por el método admin del controlador y allí dentro utilicé el req.query.user para acceder a la información que el usuario ingresó por pantalla -->
+	<img src="/images/node.jpg" width="60%">
+	<%- include("./partials/footer") %>  
+</body>
+</html>

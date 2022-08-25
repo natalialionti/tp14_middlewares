@@ -1,0 +1,22 @@
+<%-include("./partials/head") %> 
+<body>
+	<%-include("./partials/header") %> 
+	<h1>Login</h1>
+	
+    <!-- incluimos un formulario de login preseteado por bootstrap -->
+
+    <form action="/admin"> <!-- colocamos la etiqueta action con atributo "/admin" para indicar que quiero que la información del formulario se envíe a la vista /admin -->
+        <div class="mb-3">
+          <label for="user" class="form-label">Nombre</label>
+          <!-- agrego la etiqueta name con atributo user y coloco la clave user en el for del label yen el id del input-->
+          <input type="text" class="form-control" name="user" id="user" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+
+	<%-include("./partials/footer") %>
+</body>
+</html>
+    
+    
